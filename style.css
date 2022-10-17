@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    width:100%;
+    background-color: #494949;
+    overflow: hidden;
+}
+
+#nav{
+    display:flex;
+    position: fixed;
+    z-index: 99999;
+    width:100%;
+    height:70px;
+    border-bottom: 1px solid #333;
+    
+}
+
+#nav .options{
+    display: flex;
+    align-items: center;
+    padding:0 3vw;
+    color:#fff;
+    width:calc(100%/3);
+    height:100%;
+     font-size: 23px;
+     position: relative;
+}
+
+.options .cover{
+    color:#fff; 
+    z-index: 999;
+    left:0;
+    bottom:0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    width: 100%;
+    height:5%; 
+    background-color:transparent;
+}
+
+.cover span{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.options:nth-child(1) .cover{
+    background-color: #fff;
+    color:#000;
+}
+
+#home{
+    width:100%;
+    height:100vh;
+  position: relative; 
+ 
+}
+
+.container{
+   flex-direction: column; 
+    display: flex;
+   align-items: center;
+    justify-content: center; 
+    position: relative; 
+    width:100%;
+    height:100vh;
+    overflow:hidden;
+}
+
+.container img{
+    width: 100%;
+    height:100%;
+    object-fit:cover; 
+    display: inline-block;
+    
+}
+
+.container .text{
+white-space: nowrap;
+font-size: 8vw;
+font-weight: 500;
+color:white;
+position: absolute;
+top:50%;
+left:37%;
+transform: translate(-50%,-50%);
+}
+
+.text .line{
+    animation: anim 2s cubic-bezier(0.19, 1, 0.22, 1) 1s infinite both; 
+    position: relative;
+    width:0%;
+    height:10px;
+    background-color: #fff;
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+    transition: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+
+#second{
+    width:100%;
+    height:100vh;
+    background-color: yellow;
+    position: relative;
+}
+
+#third{
+    width:100%;
+    height:100vh;
+    background-color: green;
+    position: relative;
+}
+
+#fourth{
+    width:100%;
+    height:100vh;
+    background-color: pink;
+    position: relative;
+}
+
